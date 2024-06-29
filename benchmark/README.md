@@ -1468,6 +1468,51 @@ cooling_down = 1
            nanodet_m  min =  208.41  max =  211.31  avg =  210.03
 ```
 
+### Qualcomm Snapdragon 888 (Cortex-X1 2.84GHz x1 + Cortex-A78 2.4GHz x3 + Cortex-A55 1.8GHz x4)
+```
+venus:/data/local/tmp $ ./benchncnn 8 8 2 -1 1
+loop_count = 8
+num_threads = 8
+powersave = 2
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =    5.89  max =    6.04  avg =    5.98
+     squeezenet_int8  min =    6.09  max =    6.29  avg =    6.25
+           mobilenet  min =    9.27  max =   10.22  avg =    9.64
+      mobilenet_int8  min =    5.90  max =    6.05  avg =    5.97
+        mobilenet_v2  min =    6.87  max =    8.42  avg =    7.63
+        mobilenet_v3  min =    8.93  max =   12.22  avg =    9.55
+          shufflenet  min =    8.72  max =   11.44  avg =    9.20
+       shufflenet_v2  min =    6.05  max =    8.24  avg =    7.40
+             mnasnet  min =    7.83  max =    9.03  avg =    8.53
+     proxylessnasnet  min =    7.03  max =    9.62  avg =    7.88
+     efficientnet_b0  min =   12.62  max =   18.01  avg =   15.51
+   efficientnetv2_b0  min =   14.96  max =   23.75  avg =   19.61
+        regnety_400m  min =   23.58  max =   23.87  avg =   23.72
+           blazeface  min =    4.62  max =    4.87  avg =    4.73
+           googlenet  min =   17.23  max =   25.41  avg =   19.83
+      googlenet_int8  min =   16.91  max =   17.05  avg =   16.99
+            resnet18  min =   12.05  max =   14.90  avg =   13.47
+       resnet18_int8  min =   15.10  max =   15.42  avg =   15.27
+             alexnet  min =   13.85  max =   15.73  avg =   14.50
+               vgg16  min =   56.85  max =   57.88  avg =   57.32
+          vgg16_int8  min =   70.12  max =   72.99  avg =   71.53
+            resnet50  min =   29.45  max =   29.78  avg =   29.64
+       resnet50_int8  min =   24.99  max =   25.31  avg =   25.16
+      squeezenet_ssd  min =   17.51  max =   22.63  avg =   19.25
+ squeezenet_ssd_int8  min =   16.81  max =   17.26  avg =   16.98
+       mobilenet_ssd  min =   15.96  max =   16.52  avg =   16.11
+  mobilenet_ssd_int8  min =   13.70  max =   14.26  avg =   13.95
+      mobilenet_yolo  min =   50.48  max =   52.88  avg =   51.76
+  mobilenetv2_yolov3  min =   22.63  max =   22.99  avg =   22.85
+         yolov4-tiny  min =   29.01  max =   38.20  avg =   32.50
+           nanodet_m  min =   12.58  max =   15.53  avg =   13.86
+    yolo-fastest-1.1  min =    8.57  max =    9.18  avg =    8.86
+      yolo-fastestv2  min =    6.85  max =    8.47  avg =    8.05
+  vision_transformer  min =  548.48  max =  703.29  avg =  614.47
+          FastestDet  min =    7.71  max =    9.31  avg =    8.15
+```
+
 ### Raspberry Pi 3 Model B+ Broadcom BCM2837B0, Cortex-A53 (ARMv8) (1.4GHz x 4)
 ```
 pi@raspberrypi:~/ncnn/build/benchmark $ ./benchncnn 4 4 0 -1 1
